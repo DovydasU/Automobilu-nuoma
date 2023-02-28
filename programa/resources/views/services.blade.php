@@ -39,9 +39,9 @@
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item"><a href="dizainas" class="nav-link">Home</a></li>
-	          <li class="nav-item"><a href="about" class="nav-link">About</a></li>
-	          <li class="nav-item active"><a href="services" class="nav-link">Services</a></li>
+	          <li class="nav-item"><a href="{{route('dizainas')}}" class="nav-link">Home</a></li>
+	          <li class="nav-item"><a href="{{route('about')}}" class="nav-link">About</a></li>
+	          <li class="nav-item active"><a href="{{route('services')}}" class="nav-link">Services</a></li>
 	          <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
 	          <li class="nav-item"><a href="car.html" class="nav-link">Cars</a></li>
 	          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
