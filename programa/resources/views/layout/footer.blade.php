@@ -14,25 +14,25 @@
             </div>
             <div class="col-md">
                 <div class="ftco-footer-widget mb-4 ml-md-5">
-                    <h2 class="ftco-heading-2">Information</h2>
+                    <h2 class="ftco-heading-2">Informacija</h2>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="py-2 d-block">About</a></li>
-                        <li><a href="#" class="py-2 d-block">Services</a></li>
-                        <li><a href="#" class="py-2 d-block">Term and Conditions</a></li>
-                        <li><a href="#" class="py-2 d-block">Best Price Guarantee</a></li>
-                        <li><a href="#" class="py-2 d-block">Privacy &amp; Cookies Policy</a></li>
+                        <li><a href="{{route('about')}}" class="py-2 d-block">Apie</a></li>
+                        <li><a href="{{route('services.index')}}" class="py-2 d-block">Paslaugos</a></li>
+                        <li><a href="http://www.onus.lt/terminai-ir-salygos.html" class="py-2 d-block">Terminai ir sąlygos</a></li>
+                        <li><a href="https://www.dancovershop.com/lt/geriausios-kainos-garantija.aspx" class="py-2 d-block">Geriausios kainos garantija</a></li>
+                        <li><a href="https://www.elko.lt/cookies" class="py-2 d-block">Privatumas &amp; Slapukų politika</a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-md">
                 <div class="ftco-footer-widget mb-4">
-                    <h2 class="ftco-heading-2">Customer Support</h2>
+                    <h2 class="ftco-heading-2">Pagalba klientams</h2>
                     <ul class="list-unstyled">
                         <li><a href="#" class="py-2 d-block">FAQ</a></li>
-                        <li><a href="#" class="py-2 d-block">Payment Option</a></li>
-                        <li><a href="#" class="py-2 d-block">Booking Tips</a></li>
-                        <li><a href="#" class="py-2 d-block">How it works</a></li>
-                        <li><a href="#" class="py-2 d-block">Contact Us</a></li>
+                        <li><a href="#" class="py-2 d-block">Mokėjimo būdai</a></li>
+                        <li><a href="#" class="py-2 d-block">Užsakymo patarimai</a></li>
+                        <li><a href="#" class="py-2 d-block">Kaip tai veikia</a></li>
+                        <li><a href="#" class="py-2 d-block">Susisiekite su mumis</a></li>
                     </ul>
                 </div>
             </div>
@@ -55,7 +55,7 @@
                 <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     Copyright &copy;<script>
                         document.write(new Date().getFullYear());
-                    </script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                    </script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Dovydas Ulonas</a>
                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
             </div>
         </div>

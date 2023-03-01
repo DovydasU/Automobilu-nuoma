@@ -16,7 +16,7 @@
               <span class="ion-ios-play"></span>
             </div>
             <div class="heading-title ml-5">
-              <span>Easy steps for renting a car</span>
+              <span>Lengvi žingsniai išsinuomoti automobilį</span>
             </div>
           </a>
         </div>
@@ -201,42 +201,19 @@
       </div>
     </div>
     <div class="row">
+
+    @foreach($service_list as $item)
       <div class="col-md-3">
         <div class="services services-2 w-100 text-center">
-          <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-wedding-car"></span></div>
+          <div class="icon d-flex align-items-center justify-content-center"><span class="{{ $item->image }}"></span></div>
           <div class="text w-100">
-            <h3 class="heading mb-2">Wedding Ceremony</h3>
-            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+            <h3 class="heading mb-2">{{ $item->name }}</h3>
+            <p>{{ $item->description }}</p>
           </div>
         </div>
       </div>
-      <div class="col-md-3">
-        <div class="services services-2 w-100 text-center">
-          <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-transportation"></span></div>
-          <div class="text w-100">
-            <h3 class="heading mb-2">City Transfer</h3>
-            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="services services-2 w-100 text-center">
-          <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-car"></span></div>
-          <div class="text w-100">
-            <h3 class="heading mb-2">Airport Transfer</h3>
-            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="services services-2 w-100 text-center">
-          <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-transportation"></span></div>
-          <div class="text w-100">
-            <h3 class="heading mb-2">Whole City Tour</h3>
-            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-          </div>
-        </div>
-      </div>
+    @endforeach
+
     </div>
   </div>
 </section>
