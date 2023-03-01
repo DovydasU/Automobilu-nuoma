@@ -17,9 +17,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/dizainas', function () {
-    return view('dizainas');
-})->name('dizainas');
+Route::get('/home', function () {
+    return view('home');
+})->name('home');
 
 Route::get('/about', function () {
     return view('about');
@@ -28,3 +28,19 @@ Route::get('/about', function () {
 Route::get('/services', function () {
     return view('services');
 })->name('services');
+
+Route::get('/prices', function () {
+    return view('prices');
+})->name('prices');
+
+Route::get('/car', function () {
+    return view('car');
+})->name('car');
+
+Route::get('/admin', function () {
+    return view('admin');
+})->name('admin');
+
+Route::get('/contacts', function () {
+    return view('contacts');
+})->name('contacts');
