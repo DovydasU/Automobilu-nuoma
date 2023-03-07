@@ -16,23 +16,23 @@ class ServiceSeeder extends Seeder
     public function run()
     {
         DB::table('services')->insert([
-            'name' => "Wedding Ceremony",
-            'description' => "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+            'name' => "Vestuvių ceremonija",
+            'description' => "Vestuvių ceremonija yra svarbiausia ir pati sentimentaliausia vestuvių dienos dalis.",
             'image' => "flaticon-wedding-car",
         ]);
         DB::table('services')->insert([
-            'name' => "City Transfer",
-            'description' => "Laba diena.",
+            'name' => "Miesto pervežimas",
+            'description' => "Teikia krovinių gabenimą.",
             'image' => "flaticon-transportation",
         ]);
         DB::table('services')->insert([
-            'name' => "Airport Transfer",
-            'description' => "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+            'name' => "Pervežimas į oro uostą",
+            'description' => "Ieškokite, palyginkite ir užsisakykite internetu iš pasaulyje pirmaujančio pervežimo į oro uostą ir automobilių nuomos paslaugų teikėjo!",
             'image' => "flaticon-car",
         ]);
         DB::table('services')->insert([
-            'name' => "Whole City Tour",
-            'description' => "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+            'name' => "Ekskursija po visą miestą",
+            'description' => "Keliaukite virtualiai ir pasinaudokite mūsų vietinių kelionių gidų žiniomis!",
             'image' => "flaticon-transportation",
         ]);
     }
