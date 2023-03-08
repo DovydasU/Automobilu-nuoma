@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CarController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ServiceController;
 use Illuminate\Support\Facades\Route;
@@ -37,9 +38,17 @@ Route::get('/prices', function () {
     return view('prices');
 })->name('prices');
 
-Route::get('/car', function () {
-    return view('car');
-})->name('car');
+
+Route::get('/car', [CarController::class, "index"])->name('car');
+// Route::get('/car', function () {
+//     return view('car');
+// })->name('car');
+
+
+Route::get('/car/{car}', [CarController::class, "show"])->name('car.show');
+// Route::get('/car-single', function () {
+//     return view('car-single');
+// })->name('car-single');
 
 Route::get('/admin', function () {
     return view('admin');

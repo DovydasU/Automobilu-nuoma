@@ -99,7 +99,6 @@
     </div>
 </section>
 
-
 <section class="ftco-section ftco-no-pt bg-light">
   <div class="container">
     <div class="row justify-content-center">
@@ -111,62 +110,22 @@
     <div class="row">
       <div class="col-md-12">
         <div class="carousel-car owl-carousel">
+          @foreach($car_list as $item)
           <div class="item">
             <div class="car-wrap rounded ftco-animate">
-              <div class="img rounded d-flex align-items-end" style="background-image: url(images/car-1.jpg);">
+              <div class="img rounded d-flex align-items-end" style="background-image: url({{asset( $item->image )}});">
               </div>
               <div class="text">
-                <h2 class="mb-0"><a href="#">Mercedes Grand Sedan</a></h2>
+                <h2 class="mb-0"><a href="#">{{ $item->make }}</a></h2>
                 <div class="d-flex mb-3">
-                  <span class="cat">Cheverolet</span>
-                  <p class="price ml-auto">$90 <span>/diena</span></p>
+                  <span class="cat">{{ $item->model}}</span>
+                  <p class="price ml-auto">{{ $item->price}} Eur<span>/diena</span></p>
                 </div>
-                <p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1">Nuomuoti</a> <a href="#" class="btn btn-secondary py-2 ml-1">Detaliau</a></p>
+                <p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1">Nuomuoti</a> <a href="{{ route('car.show', $item->id) }}" class="btn btn-secondary py-2 ml-1">Detaliau</a></p>
               </div>
             </div>
           </div>
-          <div class="item">
-            <div class="car-wrap rounded ftco-animate">
-              <div class="img rounded d-flex align-items-end" style="background-image: url(images/car-2.jpg);">
-              </div>
-              <div class="text">
-                <h2 class="mb-0"><a href="#">Mercedes Grand Sedan</a></h2>
-                <div class="d-flex mb-3">
-                  <span class="cat">Cheverolet</span>
-                  <p class="price ml-auto">$100 <span>/diena</span></p>
-                </div>
-                <p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1">Nuomuoti</a> <a href="#" class="btn btn-secondary py-2 ml-1">Detaliau</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="car-wrap rounded ftco-animate">
-              <div class="img rounded d-flex align-items-end" style="background-image: url(images/car-3.jpg);">
-              </div>
-              <div class="text">
-                <h2 class="mb-0"><a href="#">Mercedes Grand Sedan</a></h2>
-                <div class="d-flex mb-3">
-                  <span class="cat">Cheverolet</span>
-                  <p class="price ml-auto">$250 <span>/diena</span></p>
-                </div>
-                <p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1">Nuomuoti</a> <a href="#" class="btn btn-secondary py-2 ml-1">Detaliau</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="car-wrap rounded ftco-animate">
-              <div class="img rounded d-flex align-items-end" style="background-image: url(images/car-4.jpg);">
-              </div>
-              <div class="text">
-                <h2 class="mb-0"><a href="#">Mercedes Grand Sedan</a></h2>
-                <div class="d-flex mb-3">
-                  <span class="cat">Cheverolet</span>
-                  <p class="price ml-auto">$120 <span>/diena</span></p>
-                </div>
-                <p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1">Nuomuoti</a> <a href="#" class="btn btn-secondary py-2 ml-1">Detaliau</a></p>
-              </div>
-            </div>
-          </div>
+          @endforeach
         </div>
       </div>
     </div>
@@ -202,7 +161,7 @@
     </div>
     <div class="row">
 
-    @foreach($service_list as $item)
+      @foreach($service_list as $item)
       <div class="col-md-3">
         <div class="services services-2 w-100 text-center">
           <div class="icon d-flex align-items-center justify-content-center"><span class="{{ $item->image }}"></span></div>
@@ -212,7 +171,7 @@
           </div>
         </div>
       </div>
-    @endforeach
+      @endforeach
 
     </div>
   </div>
@@ -244,7 +203,7 @@
         <div class="carousel-testimony owl-carousel ftco-owl">
           <div class="item">
             <div class="testimony-wrap rounded text-center py-4 pb-5">
-              <div class="user-img mb-2" style="background-image: url(images/person_1.jpg)">
+              <div class="user-img mb-2" style="background-image: url({{asset('images/person_1.jpg')}});">
               </div>
               <div class="text pt-4">
                 <p class="mb-4">Toli toli, už žodžio kalnai, toli nuo šalių Vokalia ir Consonantia gyvena aklieji tekstai.</p>
@@ -255,7 +214,7 @@
           </div>
           <div class="item">
             <div class="testimony-wrap rounded text-center py-4 pb-5">
-              <div class="user-img mb-2" style="background-image: url(images/person_2.jpg)">
+              <div class="user-img mb-2" style="background-image: url({{asset('images/person_2.jpg')}});">
               </div>
               <div class="text pt-4">
                 <p class="mb-4">Toli toli, už žodžio kalnai, toli nuo šalių Vokalia ir Consonantia gyvena aklieji tekstai.</p>
@@ -266,7 +225,7 @@
           </div>
           <div class="item">
             <div class="testimony-wrap rounded text-center py-4 pb-5">
-              <div class="user-img mb-2" style="background-image: url(images/person_3.jpg)">
+              <div class="user-img mb-2" style="background-image: url({{asset('images/person_3.jpg')}});">
               </div>
               <div class="text pt-4">
                 <p class="mb-4">Toli toli, už žodžio kalnai, toli nuo šalių Vokalia ir Consonantia gyvena aklieji tekstai.</p>
@@ -277,23 +236,23 @@
           </div>
           <div class="item">
             <div class="testimony-wrap rounded text-center py-4 pb-5">
-              <div class="user-img mb-2" style="background-image: url(images/person_1.jpg)">
+              <div class="user-img mb-2" style="background-image: url({{asset('images/person_1.jpg')}})">
               </div>
               <div class="text pt-4">
                 <p class="mb-4">Toli toli, už žodžio kalnai, toli nuo šalių Vokalia ir Consonantia gyvena aklieji tekstai.</p>
                 <p class="name">Robertas Gražulis</p>
-                <span class="position">Žiniatinklio kūrėjas</span>
+                <span class="position">Žiniatinklio Kūrėjas</span>
               </div>
             </div>
           </div>
           <div class="item">
             <div class="testimony-wrap rounded text-center py-4 pb-5">
-              <div class="user-img mb-2" style="background-image: url(images/person_1.jpg)">
+              <div class="user-img mb-2" style="background-image: url({{asset('images/person_1.jpg')}})">
               </div>
               <div class="text pt-4">
                 <p class="mb-4">Toli toli, už žodžio kalnai, toli nuo šalių Vokalia ir Consonantia gyvena aklieji tekstai.</p>
                 <p class="name">Petras Gedmintas</p>
-                <span class="position">Sistemų analitikas</span>
+                <span class="position">Sistemų Analitikas</span>
               </div>
             </div>
           </div>

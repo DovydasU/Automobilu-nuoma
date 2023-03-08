@@ -8,7 +8,7 @@
   <div class="container">
     <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-start">
       <div class="col-md-9 ftco-animate pb-5">
-        <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Pagrindinis <i class="ion-ios-arrow-forward"></i></a></span> <span>Apie <i class="ion-ios-arrow-forward"></i></span></p>
+        <p class="breadcrumbs"><span class="mr-2"><a href="{{route('home')}}">Pagrindinis <i class="ion-ios-arrow-forward"></i></a></span> <span>Apie <i class="ion-ios-arrow-forward"></i></span></p>
         <h1 class="mb-3 bread">Apie mus</h1>
       </div>
     </div>
@@ -65,9 +65,9 @@
               <div class="user-img mb-2" style="background-image: url(images/person_1.jpg)">
               </div>
               <div class="text pt-4">
-                <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                <p class="name">Roger Scott</p>
-                <span class="position">Marketing Manager</span>
+                <p class="mb-4">Toli toli, už žodžio kalnai, toli nuo šalių Vokalia ir Consonantia gyvena aklieji tekstai.</p>
+                <p class="name">Stasys Robertas</p>
+                <span class="position">Marketingo Vadybininkas</span>
               </div>
             </div>
           </div>
@@ -76,9 +76,9 @@
               <div class="user-img mb-2" style="background-image: url(images/person_2.jpg)">
               </div>
               <div class="text pt-4">
-                <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                <p class="name">Roger Scott</p>
-                <span class="position">Interface Designer</span>
+                <p class="mb-4">Toli toli, už žodžio kalnai, toli nuo šalių Vokalia ir Consonantia gyvena aklieji tekstai.</p>
+                <p class="name">Mykolas Jordanas</p>
+                <span class="position">Sąsajos Dizaineris</span>
               </div>
             </div>
           </div>
@@ -87,9 +87,9 @@
               <div class="user-img mb-2" style="background-image: url(images/person_3.jpg)">
               </div>
               <div class="text pt-4">
-                <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                <p class="name">Roger Scott</p>
-                <span class="position">UI Designer</span>
+                <p class="mb-4">Toli toli, už žodžio kalnai, toli nuo šalių Vokalia ir Consonantia gyvena aklieji tekstai.</p>
+                <p class="name">Romualdas Ulonas</p>
+                <span class="position">UI Dizaineris</span>
               </div>
             </div>
           </div>
@@ -98,9 +98,9 @@
               <div class="user-img mb-2" style="background-image: url(images/person_1.jpg)">
               </div>
               <div class="text pt-4">
-                <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                <p class="name">Roger Scott</p>
-                <span class="position">Web Developer</span>
+                <p class="mb-4">Toli toli, už žodžio kalnai, toli nuo šalių Vokalia ir Consonantia gyvena aklieji tekstai.</p>
+                <p class="name">Robertas Gražulis</p>
+                <span class="position">Žiniatinklio Kūrėjas</span>
               </div>
             </div>
           </div>
@@ -109,9 +109,9 @@
               <div class="user-img mb-2" style="background-image: url(images/person_1.jpg)">
               </div>
               <div class="text pt-4">
-                <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                <p class="name">Roger Scott</p>
-                <span class="position">System Analyst</span>
+                <p class="mb-4">Toli toli, už žodžio kalnai, toli nuo šalių Vokalia ir Consonantia gyvena aklieji tekstai.</p>
+                <p class="name">Petras Gedmintas</p>
+                <span class="position">istemų Analitikas</span>
               </div>
             </div>
           </div>
@@ -129,7 +129,7 @@
         <div class="block-18">
           <div class="text text-border d-flex align-items-center">
             <strong class="number" data-number="60">0</strong>
-            <span>Year <br>Experienced</span>
+            <span>Metų <br>patirtis</span>
           </div>
         </div>
       </div>
@@ -137,7 +137,7 @@
         <div class="block-18">
           <div class="text text-border d-flex align-items-center">
             <strong class="number" data-number="1090">0</strong>
-            <span>Total <br>Cars</span>
+            <span>Visi <br>Automobiliai</span>
           </div>
         </div>
       </div>
@@ -145,7 +145,7 @@
         <div class="block-18">
           <div class="text text-border d-flex align-items-center">
             <strong class="number" data-number="2590">0</strong>
-            <span>Happy <br>Customers</span>
+            <span>Laimingi <br>Klientai</span>
           </div>
         </div>
       </div>
@@ -153,7 +153,7 @@
         <div class="block-18">
           <div class="text d-flex align-items-center">
             <strong class="number" data-number="67">0</strong>
-            <span>Total <br>Branches</span>
+            <span>Visi <br>Brančai</span>
           </div>
         </div>
       </div>
