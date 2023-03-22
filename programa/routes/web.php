@@ -30,13 +30,15 @@ Route::get('/about', function () {
     return view('about');
 })->name('about');
 
+Route::resource("services", ServiceController::class)->only(["index"]);
 // Route::get('/services', function () {
 //     return view('services');
 // })->name('services');
 
-Route::get('/prices', function () {
-    return view('prices');
-})->name('prices');
+Route::get('/prices', [CarController::class, "prices"])->name('prices');
+// Route::get('/prices', function () {
+//     return view('prices');
+// })->name('prices');
 
 
 Route::get('/car', [CarController::class, "index"])->name('car');
@@ -57,5 +59,3 @@ Route::get('/admin', function () {
 Route::get('/contacts', function () {
     return view('contacts');
 })->name('contacts');
-
-Route::resource("services", ServiceController::class)->only(["index"]);

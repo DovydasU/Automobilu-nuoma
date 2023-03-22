@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Car;
 use App\Http\Requests\StoreCarRequest;
 use App\Http\Requests\UpdateCarRequest;
+use App\Http\Controllers\Controller;
 
 class CarController extends Controller
 {
@@ -17,6 +18,18 @@ class CarController extends Controller
     {
         $car_list = Car::all();
         return view('car', compact("car_list"));
+    }
+
+        /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    
+    public function prices()
+    {
+        $car_list = Car::all();
+        return view('prices', compact("car_list"));
     }
 
     /**
