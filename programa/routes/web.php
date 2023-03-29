@@ -59,3 +59,11 @@ Route::get('/admin', function () {
 Route::get('/contacts', function () {
     return view('contacts');
 })->name('contacts');
+
+Route::get('/blog', function () {
+    return view('blog');
+})->name('blog');
+
+Route::get('/blog-single', function () {
+    return view('blog-single');
+})->name('blog-single');

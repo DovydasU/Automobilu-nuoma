@@ -267,7 +267,7 @@
     <div class="row justify-content-center mb-5">
       <div class="col-md-7 heading-section text-center ftco-animate">
         <span class="subheading">Blogas</span>
-        <h2>Naujausi Blogai</h2>
+        <h2>Naujienos</h2>
       </div>
     </div>
     <div class="row d-flex">
@@ -282,7 +282,7 @@
               <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 14</a></div>
             </div>
             <h3 class="heading mt-2"><a href="#">Ar tikrai reikia didelio oktaninio skaičiaus dujų?</a></h3>
-            <p><a href="#" class="btn btn-primary">Skaityti daugiau</a></p>
+            <p><a href="{{ route('blog') }}" class="btn btn-primary">Skaityti daugiau</a></p>
           </div>
         </div>
       </div>
@@ -297,7 +297,7 @@
               <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 5</a></div>
             </div>
             <h3 class="heading mt-2"><a href="#">Po 7 metų nedidelis naftos praradimas nėra didelis dalykas</a></h3>
-            <p><a href="#" class="btn btn-primary">Skaityti daugiau</a></p>
+            <p><a href="{{ route('blog') }}" class="btn btn-primary">Skaityti daugiau</a></p>
           </div>
         </div>
       </div>
@@ -312,7 +312,7 @@
               <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 54</a></div>
             </div>
             <h3 class="heading mt-2"><a href="#">Atsižvelkite į tarpą keisdami uždegimo žvakes</a></h3>
-            <p><a href="#" class="btn btn-primary">Skaityti daugiau</a></p>
+            <p><a href="{{ route('blog') }}" class="btn btn-primary">Skaityti daugiau</a></p>
           </div>
         </div>
       </div>
