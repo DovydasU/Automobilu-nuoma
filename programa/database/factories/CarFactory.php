@@ -67,6 +67,7 @@ class CarFactory extends Factory
             'petrol' => fake()->randomElement([
                 "Dyzelinas",
                 "Benzinas",
+                "Hibridas",
             ]),
             'description' => fake()->text(),
         ];

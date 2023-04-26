@@ -12,7 +12,7 @@
                 <li class="nav-item @if(request()->routeIs('services.index')) active @endif"><a href="{{route('services.index')}}" class="nav-link">Paslaugos</a></li>
                 <li class="nav-item @if(request()->routeIs('prices')) active @endif"><a href="{{route('prices')}}" class="nav-link">Kainos</a></li>
                 <li class="nav-item @if(request()->routeIs('car')) active @endif"><a href="{{route('car')}}" class="nav-link">Automobiliai</a></li>
-                <li class="nav-item @if(request()->routeIs('admin')) active @endif"><a href="{{route('admin-login')}}" class="nav-link">Administravimas</a></li>
+                <li class="nav-item @if(request()->routeIs('admin')) active @endif"><a href="{{route('login')}}" class="nav-link">Administravimas</a></li>
                 <li class="nav-item @if(request()->routeIs('contacts')) active @endif"><a href="{{route('contacts')}}" class="nav-link">Kontaktai</a></li>
             </ul>
         </div>
