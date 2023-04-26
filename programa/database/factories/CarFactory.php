@@ -17,16 +17,27 @@ class CarFactory extends Factory
     public function definition()
     {
         $cars = [
-            ["Volvo", "V40"],
+            ["Volvo", "EX90"],
+            ["Volvo", "XC60 Recharge"],
             ["Volvo", "V60"],
-            ["Volvo", "XC60"],
             ["Volvo", "XC90"],
-            ["Audi", "A4"],
-            ["Audi", "A6"],
-            ["Audi", "A7"],
-            ["Audi", "Q7"],
-            ["Mercedes", "B200"],
-            ["Mercedes", "S500"],
+            ["Audi", "RS 5 Coupé"],
+            ["Audi", "TT RS Roadster"],
+            ["Audi", "RS e-tron GT"],
+            ["Audi", "RS Q8"],
+            ["Porsche", "911"],
+            ["Porsche", "Cayenne"],
+            ["Mercedes", "EQC SUV"],
+            ["Mercedes", "EQE Sedan"],
+            ["Mercedes", "CLA Coupé"],
+            ["BMW", "i4 M50"],
+            ["BMW", "8 series Coupé"],
+            ["BMW", "i4 M50"],
+            ["BMW", "i8 Roadster"],
+            ["BMW", "M760e xDrive"],
+            ["Toyota", "Yaris Cross"],
+            ["Toyota", "C-HR"],
+            ["Toyota", "Mirai"],
         ];
         $car_nr = fake()->numberBetween(0, count($cars) - 1);
         return [

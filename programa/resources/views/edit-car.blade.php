@@ -316,7 +316,7 @@
                               <br>
                               <br>
                               <br>
-                              <button type="button" class="btn btn-success">Redaguoti</button>
+                              <button type="button" class="btn btn-success">Pridėti Automobilį</button>
                           </form>
                     </div>
                     

@@ -201,6 +201,9 @@
                                 <h4 class="card-title">Vartotojai</h4>
                             </div>
                             <div class="card-body">
+                                <button type="button" href="{{ route('admin') }}" class="btn btn-success">Pridėti Administratoriu</button>
+                                <br>
+                                <br>
                                 <div class="table-responsive">
                                     <table class="table table-responsive-sm">
                                         <thead>

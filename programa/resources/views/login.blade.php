@@ -20,33 +20,33 @@
                         <div class="row no-gutters">
                             <div class="col-xl-12">
                                 <div class="auth-form">
-                                    <h4 class="text-center mb-4">Sign in your account</h4>
+                                    <h4 class="text-center mb-4">Prisijungti prie paskyros</h4>
                                     <form action="index.html">
                                         <div class="form-group">
-                                            <label><strong>Email</strong></label>
+                                            <label><strong>Elektroninis paštas</strong></label>
                                             <input type="email" class="form-control" value="hello@example.com">
                                         </div>
                                         <div class="form-group">
-                                            <label><strong>Password</strong></label>
+                                            <label><strong>Slaptažodis</strong></label>
                                             <input type="password" class="form-control" value="Password">
                                         </div>
                                         <div class="form-row d-flex justify-content-between mt-4 mb-2">
                                             <div class="form-group">
                                                 <div class="form-check ml-2">
                                                     <input class="form-check-input" type="checkbox" id="basic_checkbox_1">
-                                                    <label class="form-check-label" for="basic_checkbox_1">Remember me</label>
+                                                    <label class="form-check-label" for="basic_checkbox_1">Prisiminti mane</label>
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <a href="page-forgot-password.html">Forgot Password?</a>
+                                                <a href="page-forgot-password.html">Pamiršote slaptažodį?</a>
                                             </div>
                                         </div>
                                         <div class="text-center">
-                                            <button type="submit" class="btn btn-primary btn-block">Sign me in</button>
+                                            <button type="submit" class="btn btn-primary btn-block">Prisijungti</button>
                                         </div>
                                     </form>
                                     <div class="new-account mt-3">
-                                        <p>Don't have an account? <a class="text-primary" href="{{route('admin-register')}}">Sign up</a></p>
+                                        <p>Neturyte paskyros? <a class="text-primary" href="">Skambink Administratoriui</a></p>
                                     </div>
                                 </div>
                             </div>

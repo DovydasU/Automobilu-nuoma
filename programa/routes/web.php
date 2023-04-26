@@ -68,9 +68,9 @@ Route::get('/blog-single', function () {
     return view('blog-single');
 })->name('blog-single');
 
-Route::get('/admin-login', function () {
-    return view('admin-login');
-})->name('admin-login');
+Route::get('/login', function () {
+    return view('login');
+})->name('login');
 
 // Route::get('/admin-register', function () {
 //     return view('admin-register');

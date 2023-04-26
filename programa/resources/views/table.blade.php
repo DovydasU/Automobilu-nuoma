@@ -202,7 +202,7 @@
                                 <h4 class="card-title">Automobiliai</h4>
                             </div>
                             <div class="card-body">
-                                <button type="button" class="btn btn-success">Pridėti Automobilį</button>
+                                <a href="{{ route('add-car') }}" class="btn btn-success">Pridėti Automobilį</a>
                                 <div class="table-responsive">
 
                                     <table id="example2" class="display" style="width:100%">

@@ -20,7 +20,7 @@
                         <div class="row no-gutters">
                             <div class="col-xl-12">
                                 <div class="auth-form">
-                                    <h4 class="text-center mb-4">Automobilio Nuomavimas</h4>
+                                    <h4 class="text-center mb-4">Nuoma</h4>
                                     <form action="index.html">
                                         <div class="form-group">
                                             <label><strong>Vardas Pavardė</strong></label>
@@ -33,6 +33,10 @@
                                         <div class="form-group">
                                             <label><strong>Email</strong></label>
                                             <input type="email" class="form-control" value="">
+                                        </div>
+                                        <div class="form-group">
+                                            <label><strong>Automobilis</strong></label>
+                                            <input type="text" class="form-control" value="">
                                         </div>
                                         <div class="form-group">
                                             <label><strong>Paėmimo vieta</strong></label>
@@ -57,11 +61,11 @@
                                         <div class="form-row d-flex justify-content-between mt-4 mb-2">
                                         </div>
                                         <div class="text-center">
-                                            <button type="submit" class="btn btn-primary btn-block">Nuomuti</button>
+                                            <button type="submit" class="btn btn-success btn-block">Nuomuoti</button>
                                         </div>
                                     </form>
                                     <div class="new-account mt-3">
-                                        <p>Noryti grįžti atgal? <a class="text-primary" href="{{route('car')}}">Kiti Automobiliai</a></p>
+                                        <p>Nori grįžti atgal? <a class="text-primary" href="{{route('car')}}">Kiti Automobiliai</a></p>
                                     </div>
                                 </div>
                             </div>

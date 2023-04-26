@@ -209,6 +209,7 @@
                                                 <th>Vardas Pavardė</th>
                                                 <th>Tel. Nr.</th>
                                                 <th>Elektroninis paštas</th>
+                                                <th>Automobilio ID</th>
                                                 <th>Paėmimo vieta</th>
                                                 <th>Palikimo vieta</th>
                                                 <th>Paėmimo data</th>
@@ -224,6 +225,7 @@
                                                 <td>Dovydas Ulonas</td>
                                                 <td>+370 607 83 725</td>
                                                 <td>ulonasd@gmail.com</td>
+                                                <td>1</td>
                                                 <td>100</td>
                                                 <td>20/04/2017</td>
                                                 <td>1</td>
@@ -256,6 +258,7 @@
                                                 <td>Dovydas Ulonas</td>
                                                 <td>+370 607 83 725</td>
                                                 <td>ulonasd@gmail.com</td>
+                                                <td>1</td>
                                                 <td>100</td>
                                                 <td>20/04/2017</td>
                                                 <td>1</td>
@@ -288,6 +291,7 @@
                                                 <td>Dovydas Ulonas</td>
                                                 <td>+370 607 83 725</td>
                                                 <td>ulonasd@gmail.com</td>
+                                                <td>1</td>
                                                 <td>100</td>
                                                 <td>20/04/2017</td>
                                                 <td>100</td>
@@ -320,6 +324,7 @@
                                                 <td>Dovydas Ulonas</td>
                                                 <td>+370 607 83 725</td>
                                                 <td>ulonasd@gmail.com</td>
+                                                <td>1</td>
                                                 <td>100</td>
                                                 <td>20/04/2017</td>
                                                 <td>1</td>
@@ -352,6 +357,7 @@
                                                 <td>Dovydas Ulonas</td>
                                                 <td>+370 607 83 725</td>
                                                 <td>ulonasd@gmail.com</td>
+                                                <td>1</td>
                                                 <td>100</td>
                                                 <td>20/04/2017</td>
                                                 <td>1</td>
@@ -384,6 +390,7 @@
                                                 <td>Dovydas Ulonas</td>
                                                 <td>+370 607 83 725</td>
                                                 <td>ulonasd@gmail.com</td>
+                                                <td>1</td>
                                                 <td>100</td>
                                                 <td>20/04/2017</td>
                                                 <td>1</td>
@@ -416,6 +423,7 @@
                                                 <td>Dovydas Ulonas</td>
                                                 <td>+370 607 83 725</td>
                                                 <td>ulonasd@gmail.com</td>
+                                                <td>1</td>
                                                 <td>100</td>
                                                 <td>20/04/2017</td>
                                                 <td>1</td>

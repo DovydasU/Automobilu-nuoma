@@ -15,7 +15,7 @@
     </td>
 
     <td class="price">
-        <p class="btn-custom"><a href="#">Nuomuoti</a></p>
+        <p class="btn-custom"><a href="{{route('booking')}}">Nuomuoti</a></p>
         <div class="price-rate">
             <h3>
                 <span class="num"><small class="currency">$</small> {{ number_format($car->price / 24, 2, ",", "") }}</span>
@@ -26,7 +26,7 @@
     </td>
 
     <td class="price">
-        <p class="btn-custom"><a href="#">Nuomuoti</a></p>
+        <p class="btn-custom"><a href="{{route('booking')}}">Nuomuoti</a></p>
         <div class="price-rate">
             <h3>
                 <span class="num"><small class="currency">$</small> {{$car->price}}</span>
@@ -37,7 +37,7 @@
     </td>
 
     <td class="price">
-        <p class="btn-custom"><a href="#">Nuomuoti</a></p>
+        <p class="btn-custom"><a href="{{route('booking')}}">Nuomuoti</a></p>
         <div class="price-rate">
             <h3>
                 <span class="num"><small class="currency">$</small> {{ number_format($car->price * 30, 2, ",", "") }}</span>
