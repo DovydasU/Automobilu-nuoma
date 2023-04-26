@@ -67,3 +67,40 @@ Route::get('/blog', function () {
 Route::get('/blog-single', function () {
     return view('blog-single');
 })->name('blog-single');
+
+Route::get('/admin-login', function () {
+    return view('admin-login');
+})->name('admin-login');
+
+// Route::get('/admin-register', function () {
+//     return view('admin-register');
+// })->name('admin-register');
+
+Route::get('/admin', function () {
+    return view('admin');
+})->name('admin');
+
+Route::get('/table', [CarController::class, "table"])->name('table');
+// Route::get('/table', function () {
+//     return view('table');
+// })->name('table');
+
+Route::get('/user', function () {
+    return view('user');
+})->name('user');
+
+Route::get('/add-car', function () {
+    return view('add-car');
+})->name('add-car');
+
+Route::get('edit-car/{id}', function () {
+    return view('edit-car');
+})->name('edit-car');
+
+Route::get('edit-car/{id}', function () {
+    return view('edit-car');
+})->name('edit-car');
+
+Route::get('booking', function () {
+    return view('booking');
+})->name('booking');

@@ -33,6 +33,18 @@ class CarController extends Controller
     }
 
     /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    
+     public function table()
+     {
+         $car_list = Car::all();
+         return view('table', compact("car_list"));
+     }
+
+    /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
