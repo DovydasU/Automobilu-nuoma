@@ -15,3 +15,21 @@
 
 @section("styles")
 @endsection
+
+
+
+{# Admin page #}
+
+@extends("layout.adminbase")
+
+@section("title", "Užsakymai")
+
+@section("content")
+
+@endsection
+
+@section("scripts")
+@endsection
+
+@section("styles")
+@endsection

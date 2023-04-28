@@ -97,7 +97,7 @@ Route::get('edit-car/{id}', function () {
     return view('edit-car');
 })->name('edit-car');
 
-Route::get('edit-car/{id}', function () {
+Route::get('edit-car', function () {
     return view('edit-car');
 })->name('edit-car');
 
