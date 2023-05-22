@@ -12,7 +12,7 @@
                             <h4 class="card-title">Automobiliai</h4>
                         </div>
                         <div class="card-body">
-                            <a href="{{ route('add-car') }}" class="btn btn-success">Pridėti Automobilį</a>
+                            <a class="btn btn-success" href="{{ url('create') }}"> Prideti auto</a>
                             <div class="table-responsive">
 
                                 <table id="example2" class="display" style="width:100%">
@@ -27,7 +27,6 @@
                                             <th>Bagažas</th>
                                             <th>Kuras</th>
                                             <th>Kaina</th>
-                                            <th>Būsena</th>
                                             <th></th>
                                         </tr>
                                     </thead>
@@ -47,7 +46,6 @@
                                             <th>Bagažas</th>
                                             <th>Kuras</th>
                                             <th>Kaina</th>
-                                            <th>Būsena</th>
                                             <th></th>
                                         </tr>
                                     </tfoot>

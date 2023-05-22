@@ -5,31 +5,33 @@
 @section('content')
     <div class="content-body">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12">
-                    <form>
+            <form method="post" action="store" enctype="multipart/form-data">
+                @csrf
+                @method('post')
+                <div class="row">
+                    <div class="col-lg-12">
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Markė</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+                            <input type="text" name="name" class="form-control" id="exampleFormControlInput1" placeholder="">
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Modelis</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+                            <input type="text" name="model" class="form-control" id="exampleFormControlInput1" placeholder="">
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Rida</label>
-                            <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="">
+                            <input type="number" name="r_amount" class="form-control" id="exampleFormControlInput1" placeholder="">
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlSelect1">Pavarų dežė</label>
-                            <select class="form-control" id="exampleFormControlSelect1">
+                            <select name="deze" class="form-control" id="exampleFormControlSelect1">
                                 <option>Automatinė</option>
                                 <option>Mechaninė</option>
                             </select>
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlSelect1">Sedynės</label>
-                            <select class="form-control" id="exampleFormControlSelect1">
+                            <select name="seat" class="form-control" id="exampleFormControlSelect1">
                                 <option>1</option>
                                 <option>2</option>
                                 <option>3</option>
@@ -42,31 +44,32 @@
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Bagažas (kg)</label>
-                            <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="">
+                            <input type="number" name="kg" class="form-control" id="exampleFormControlInput1" placeholder="">
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlSelect1">Kuras</label>
-                            <select class="form-control" id="exampleFormControlSelect1">
+                            <select name="petrol" class="form-control" id="exampleFormControlSelect1">
                                 <option>Benzinas</option>
                                 <option>Dyzelis</option>
                             </select>
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Kaina</label>
-                            <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="">
+                            <input type="number" name="price" class="form-control" id="exampleFormControlInput1" placeholder="">
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlTextarea1">Aprašymas</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <textarea class="form-control" name="desc" id="exampleFormControlTextarea1" rows="3"></textarea>
                         </div>
                         <br>
-                        <button type="button" class="btn btn-success">Pridėti Automobilį</button>
-                    </form>
-                </div>
-
-
-            </div>
+                        <button type="submit" class="btn btn-success">Pridėti Automobilį</button>
+                        <a href="{{ url('table') }}" class="btn btn-success">Back</a>
+            </form>
         </div>
+
+
+    </div>
+    </div>
     </div>
 @endsection
 

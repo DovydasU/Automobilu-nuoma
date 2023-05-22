@@ -5,9 +5,11 @@
 @section('content')
     <div class="content-body">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12">
-                    <form>
+            <form method="post" action="dataInsert" enctype="multipart/form-data">
+                @csrf
+                @method('post')
+                <div class="row">
+                    <div class="col-lg-12">
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Markė</label>
                             <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
@@ -60,13 +62,16 @@
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                         </div>
                         <br>
-                        <button type="button" class="btn btn-success">Pridėti Automobilį</button>
-                    </form>
-                </div>
-
-
-            </div>
+                        <br>
+                        <br>
+                        <button type="submit" class="btn btn-success">Update</button>
+                        <a href="{{ route('table') }}" class="btn btn-success">Back</a>
+            </form>
         </div>
+
+
+    </div>
+    </div>
     </div>
 @endsection
 

@@ -9,4 +9,6 @@ class Car extends Model
 {
     use HasFactory;
     public $timestamps = false;
+
+    protected $fillable = ['make', 'model', 'price', 'mileage', 'transmission', 'seats', 'luggage', 'petrol', 'description'];
 }

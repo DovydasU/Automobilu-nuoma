@@ -89,9 +89,11 @@ Route::get('/user', function () {
     return view('user');
 })->name('user');
 
-Route::get('/add-car', function () {
-    return view('add-car');
-})->name('add-car');
+Route::get('/create', function () {
+    return view('create');
+})->name('create');
+
+// Route::post('store', [CarController::class, 'store']);
 
 Route::get('edit-car/{id}', function () {
     return view('edit-car');
