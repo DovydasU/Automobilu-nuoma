@@ -12,7 +12,7 @@
                             <h4 class="card-title">Automobiliai</h4>
                         </div>
                         <div class="card-body">
-                            <a class="btn btn-success" href="{{ url('create') }}"> Prideti auto</a>
+                            <a class="btn btn-success" href="{{ url('create') }}"> Prideti automobilį</a>
                             <div class="table-responsive">
 
                                 <table id="example2" class="display" style="width:100%">
